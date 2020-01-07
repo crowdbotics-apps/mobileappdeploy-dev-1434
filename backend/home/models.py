@@ -8,7 +8,12 @@ from django.db import models
 
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
-    gdfgfdghf = models.CharField(null=True, blank=True, max_length=256,)
+    ttest = models.GenericIPAddressField(
+        protocol="both", unpack_ipv4=False, null=True, blank=True,
+    )
+    tesst = models.GenericIPAddressField(
+        protocol="both", unpack_ipv4=False, null=True, blank=True,
+    )
 
     def __str__(self):
         return self.title
