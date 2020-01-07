@@ -12,6 +12,7 @@
     "preset": "react-native"
   },
   "dependencies": {
+    "react-native-icon-badge": "*",
     "react-native-lightbox": "*",
     "@eva-design/eva": "1.0.1",
     "@fortawesome/fontawesome-svg-core": "1.2.22",
