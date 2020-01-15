@@ -9,10 +9,7 @@ from django.db import models
 class CustomText(models.Model):
     title = models.CharField(max_length=150,)
     ttest = models.GenericIPAddressField(
-        protocol="both", unpack_ipv4=False, null=True, blank=True,
-    )
-    tesst = models.GenericIPAddressField(
-        protocol="both", unpack_ipv4=False, null=True, blank=True,
+        null=True, blank=True, protocol="both", unpack_ipv4=False,
     )
 
     def __str__(self):
